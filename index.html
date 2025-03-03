@@ -12,49 +12,82 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./css/index.css">
+    <script src="js/index.js" defer></script>
 </head>
 <body>
     <div class="main-container">
-        <nav class="nav">
-            <a href="/">
-                Benjamín Barra
-                <span>Sitio web personal</span>
-            </a>
-            <a href="/" class="nav-link">Inicio</a>
-            <a href="#" class="nav-link">Acerca de mi</a>
-            <a href="#" class="nav-link">Proyectos</a>
-            <a href="#" class="nav-link">Contacto</a>
-          </nav>
-        <div class="about-me">
-            <h1>¿Quien es Benjamín Barra?</h1>
-            <strong><p>
-                    Hola Soy Benjamín Barra, tengo 17 años y soy de la ciudad de Osorno de Chile, egrese de la enseñanza media en <br>
-                    el <a href="https://institutocomercialosorno.cl/" target="_blank">Instituto Comercial de Osorno</a> con un cerfiticado de programador Full-Stack Python por parte de la institucion <br>
-                    <a href="https://www.codingdojo.la/" target="_blank">Coding Dojo Latam</a>, en Marzo de 2025 estare iniciando la enseñanza superior en <a href="https://portal.inacap.cl/" target="_blank">Inacap</a> para estudiar <br> 
-                    Ingenieria en Informatica y seguir aprendiendo sobre el mundo de la programación, actualmente me encuentro haciendo <br> 
-                    un curso de React <ion-icon name="logo-react"></ion-icon>.
-                </p>
-            </strong>
-            <div class="habilidades">
-                <h2>Mis Conocimientos</h2>
-                <div class="icons">
-                    <ion-icon name="logo-html5"></ion-icon>
-                    <ion-icon name="logo-css3"></ion-icon>
-                    <ion-icon name="logo-javascript"></ion-icon>
-                    <ion-icon name="logo-python"></ion-icon>
-                    <ion-icon name="logo-react"></ion-icon>
-                    <i class='bx bxs-data' ></i>
-                </div>
+        <div class="navbar">
+            <div class="nombre">
+                <h2><a href="/" >Benjamín Barra</a></h2>
             </div>
-            <img src="" alt=""> "Una foto mia" 
+            <ul>
+                <li><a href="#about-me">Acerca de Mi</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
         </div>
-        <div class="Proyectos">
-            <h2>Proyectos en los cuales participé </h2>
-            <section class="sud-marcaje">2</section>
-            <section class="sud-finanzas">3</section>
-            <section class="chancho">4</section>
+        <div class="sub-main-container">
+            <section id="about-me" class="about-me">
+                <div class="container-aboutme">
+                    <div class="container-info">
+                        <h2 class="text-center" style="text-decoration: underline;">¿Quien es Benjamín Barra?</h2>
+                        <p>
+                            Hola soy Benjamín Barra, tengo 17 años, estudie en el Instituto Comercial Osorno y voy a iniciar la enseñanza 
+                            superior en la carrera de Ingenieria en Informatica en Inacap Osorno en marzo
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="habilidades" class="habilidades">
+                <div class="container-habilidades">
+                    <h2 class="text-center" style="color: aliceblue; text-decoration: underline;">Mis Habilidades</h2>
+                    <div class="container-img">
+                        <img src="img/html-5.png" alt="HTML" title="HTML">
+                        <img src="img/css-3.png" alt="" title="CSS">
+                        <img src="img/js.png" alt="" title="JavaScript">
+                        <img src="img/python.png" alt="" title="Python">
+                        <img src="img/React.png" alt="" title="React Native">
+                        <img src="img/database.png" alt="" title="Bases de Datos">
+                    </div> <br>
+                    <div class="container-descripcion">
+                        <p style="color: #fff;">
+                            En el año 2024 obtuve la certificación Full-Stack Python por parte de la institución educativa Coding Dojo actualmente <a href="https://edu.skillnest.com">Skillnest</a>, <br>
+                            actualmente me encuentro estudiando React Native
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="proyectos" class="proyectos">
+                <div class="container-proyectos">
+                    <h1 class="text-center">Mis trabajos y Proyectos</h1>
+                    <section class="sudcap1">
+                        <h1>Suda-Marcaje</h1> <br>
+                        <p>Aplicacion con HTML, CSS, JavaScript, Flask y MySqls creada para la empresa de seguridad <a href="https://sudcap.cl/">Sudcap</a> (Sudamericana de Seguridad y servicios Limitada)</p>
+                    </section>
+                    <section class="sudcap2"></section>
+                </div>
+            </section>
+            <section id="contacto" class="contacto">
+                <div class="container-contacto">
+                    <h1 style="text-decoration: underline;">Metodos de Contacto</h1>
+                    <div class="container-redes">
+                        <a href="https://www.instagram.com/benyis_b_.d_" class="instagram" target="_blank">
+                            <img src="./img/instagram-logo.png">Instagram
+                        </a>
+                        <a href="https://www.linkedin.com/in/bbarra/" target="_blank">
+                            <img src="./img/linkedin-logo.png">Linkedin
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=barradiazbenjamin@gmail.com" target="_blank">
+                            <img src="./img/gmail.png">Mi Correo
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <footer class="copy">
+                <p>Copyright © 2025 | Benjamín Barra  | TODOS LOS DERECHOS RESERVADOS</p>
+            </footer>
         </div>
-        <footer class="copy">6</footer>
     </div>
 </body>
 </html>

@@ -1,17 +1,229 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding-top: 0;
+    width: 100%;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
-body{
+
+
+.navbar {
+    z-index: 999999;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(30, 31, 30);
+    padding: 10px 5px 10px 5px;
+    display: flex;
+}
+
+.nombre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    width: 75%;
+    height: 100%;
+}
+
+.nombre h2{
+    color: #fff;
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color:  #fff;
+}
+
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.main-container{
     width: 100vw;
     height: 100vh;
 }
 
-.nav{
+.main-container section{
     width: 100%;
-    height: 100px;
-    background-color: aquamarine;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(10, 89, 109);
+    overflow-y: hidden;
+}
+
+
+.container-aboutme{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 10px 10px 20px 10px;
+    padding-top: 100px;
 }
+
+.container-info{
+    width: 60%;
+    height: 90%;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    border: 3px solid black;
+    background-color: rgb(43, 31, 31);
+    transition: .8s;
+    transform: scale(1);
+    color: #fff;
+    box-shadow: 1px 1px 10px 4px rgb(43, 31, 31);
+}
+
+.container-info:hover{
+    transition: .8s;
+    transform: scale(1.02);
+}
+
+.container-habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-habilidades .container-descripcion, .container-proyectos{
+    padding: 10px 20px 10px 10px;
+}
+
+.container-aboutme, .container-habilidades, .container-proyectos{
+    padding-top: 100px;
+}
+.container-habilidades, .container-proyectos, .container-contacto{
+    padding-top: 130px;
+}
+.container-contacto{
+    padding-top: 120px;
+}
+
+.main-container .habilidades .container-img{
+    display: flex;
+    gap: 20px;
+    background-color: azure;
+    width: 650px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 1px 3px 10px 9px;
+    padding: 20px;
+}
+
+.main-container .habilidades .container-img img{
+    width: 60px;
+    height: 60px;
+    transform: scale(1);
+    transition: .7s ;
+
+}
+.container-redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.container-redes a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.container-redes a img{
+    width: 60px;
+    height: 60px;
+
+}
+
+.main-container .habilidades .container-img img:hover {
+    transform: scale(1.2);
+    transition: 0.7s;
+}
+
+.main-container .copy{
+    color: #fff;
+    width: 100vw;
+    height: 50px;
+    padding: 20px 10px 10px 10px;
+    background-color: rgb(5, 10, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0px;
+}
+
+
+/** RESPONSIVIDAD */
+
+
+@media (max-width: 528px){
+    .container-redes{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        transition: 1.2s;
+    
+    }
+    
+}
+@media (max-width: 922px){
+    .navbar{
+        height: 85px;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .nombre{
+        width: 100%;
+    }
+    .navbar ul{
+        display: none;
+    }
+
+    .container-info{
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 682px) {
+    .main-container .habilidades .container-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 95vw;
+        height: auto; 
+    }
+
+    .main-container .habilidades .container-img img {
+        width: 60px;  
+        height: 60px; 
+        object-fit: contain; 
+    }
+}
+
