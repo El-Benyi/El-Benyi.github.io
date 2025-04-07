@@ -124,7 +124,7 @@ html, body {
     display: flex;
     gap: 20px;
     background-color: azure;
-    width: 650px;
+    width: auto;
     height: 100px;
     justify-content: center;
     align-items: center;
@@ -176,6 +176,22 @@ html, body {
     bottom: 0px;
 }
 
+#proyectos .container-proyectos{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    color: #fff;
+}
+
+#proyectos .container-proyectos .sudcap{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#proyectos .container-proyectos .sud_marcaje .titulo_sud_marcaje{
+    color: #fff;
+}
+
 
 /** RESPONSIVIDAD */
 
@@ -190,6 +206,26 @@ html, body {
     }
     
 }
+
+@media (max-width: 650px){
+    
+    .main-container .copy p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 923px){
+    
+    .main-container .habilidades .container-img{
+        width: 97vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        height: auto; 
+    }
+}
+
 @media (max-width: 922px){
     .navbar{
         height: 85px;
